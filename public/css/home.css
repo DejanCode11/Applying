@@ -1,0 +1,95 @@
+/** @format */
+/* body {
+  background: url('/public/images/gjomleze1.jpg');
+} */
+
+.intro-container {
+  height: 470px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/images/gravce-tavce-scaled.jpg');
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+}
+
+.navigation {
+  animation-name: navTopDown;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+}
+
+.description {
+  color: rgb(221, 221, 221);
+  width: 100%;
+  text-align: center;
+  padding-top: 150px;
+
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+#main {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 20px;
+}
+
+.card {
+  background-color: rgb(175, 175, 175, 0.5);
+  min-height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px;
+  animation-name: slideFromBottom;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  margin-bottom: 100px;
+}
+
+.card-img {
+  height: auto;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 4px;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes navTopDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 800px) {
+  #main {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-img {
+    height: auto;
+    width: 100%;
+  }
+}

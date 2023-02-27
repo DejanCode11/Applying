@@ -1,0 +1,45 @@
+/** @format */
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.input {
+  padding: 10px;
+}
+
+.label {
+  margin: 10px 0;
+}
+
+.submit {
+  padding: 10px;
+  margin-top: 30px;
+  width: fit-content;
+  align-self: center;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 800px) {
+  .form-container {
+    margin-top: 100px;
+  }
+}

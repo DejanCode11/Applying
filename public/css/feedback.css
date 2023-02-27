@@ -1,0 +1,38 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px;
+}
+.title {
+  text-align: center;
+}
+.name {
+  color: rgb(109, 109, 109);
+}
+.email {
+  color: rgb(116, 116, 116);
+}
+.time {
+  color: rgb(160, 160, 160);
+}
+.paragraph {
+  border: 1px;
+  border: 1px solid black;
+  margin: 3px;
+  padding: 2px;
+}
+.desc-comment {
+  border-bottom: 1px solid black;
+}
+@media screen and (max-width: 800px) {
+  .title {
+    margin-top: 100px;
+  }
+}
